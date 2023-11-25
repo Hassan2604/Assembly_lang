@@ -6,8 +6,8 @@ dosseg
 .model small
 .stack 100h
 .data
-var1 db 'Hello$'
-var2 db 'World$'
+var1 db 'Hello', 0Ah,'$'
+var2 db 'World' ,0Ah,'$'
 .code
 main proc
 mov ax, @data
